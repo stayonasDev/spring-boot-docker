@@ -12,8 +12,8 @@ import java.util.Calendar;
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 public class CurlResponseDTO {
-    private ZonedDateTime koreanTime;
-//    private String koreanTime;
+//    private ZonedDateTime koreanTime;
+    private String koreanTime;
     private long timeStamp;
     private String message;
 }

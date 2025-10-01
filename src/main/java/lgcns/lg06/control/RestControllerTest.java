@@ -24,8 +24,7 @@ public class RestControllerTest {
 
     public CurlResponseDTO createWelcomeMessage(){
         return CurlResponseDTO.builder()
-//                .koreanTime(ZonedDateTime.now(ZoneId.of("Asia/Seoul")) + "[Asia/Seoul]")
-                .koreanTime(ZonedDateTime.now(ZoneId.of("Asia/Seoul")))
+                .koreanTime(ZonedDateTime.now(ZoneId.of("Asia/Seoul")) + "[Asia/Seoul]")
                 .timeStamp(System.currentTimeMillis())
                 .message("Hello, World")
                 .build();
