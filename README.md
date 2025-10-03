@@ -2,7 +2,7 @@
 
 ## Run
 ```bash
-java -jar build/lib/lg06.<VERSION>.jar # or java -jar build/lib/app.<VERSION>.jar 
+java -jar build/lib/lg06.<VERSION>.jar 
 ```
 
 ## Build

@@ -1,0 +1,145 @@
+Calculating JVM memory based on 14941364K available memory
+For more information on this calculation, see https://paketo.io/docs/reference/java-reference/#memory-calculator
+Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx14312861K -XX:MaxMetaspaceSize=116502K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 14941364K, Thread Count: 250, Loaded Class Count: 18155, Headroom: 0%)
+Enabling Java Native Memory Tracking
+Adding 146 container CA certificates to JVM truststore
+Spring Cloud Bindings Enabled
+Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -XX:+ExitOnOutOfMemoryError -XX:MaxDirectMemorySize=10M -Xmx14312861K -XX:MaxMetaspaceSize=116502K -XX:ReservedCodeCacheSize=240M -Xss1M -XX:+UnlockDiagnosticVMOptions -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics -Dorg.springframework.cloud.bindings.boot.enable=true
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-02T05:19:20.616Z  INFO 1 --- [applcation] [           main] lgcns.lg06.ApplicationApplication         : Starting ApplcationApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2025-10-02T05:19:20.620Z  INFO 1 --- [applcation] [           main] lgcns.lg06.ApplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T05:19:21.256Z  INFO 1 --- [applcation] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T05:19:21.278Z  INFO 1 --- [applcation] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2025-10-02T05:19:21.718Z  INFO 1 --- [applcation] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-02T05:19:21.731Z  INFO 1 --- [applcation] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-02T05:19:21.731Z  INFO 1 --- [applcation] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-02T05:19:21.770Z  INFO 1 --- [applcation] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-02T05:19:21.771Z  INFO 1 --- [applcation] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1091 ms
+2025-10-02T05:19:21.943Z  INFO 1 --- [applcation] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-02T05:19:22.115Z  INFO 1 --- [applcation] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:32a0faf7-715a-406e-afb5-5ba0960326f4 user=SA
+2025-10-02T05:19:22.117Z  INFO 1 --- [applcation] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-02T05:19:22.168Z  INFO 1 --- [applcation] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02T05:19:22.219Z  INFO 1 --- [applcation] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-02T05:19:22.247Z  INFO 1 --- [applcation] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-02T05:19:22.594Z  INFO 1 --- [applcation] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02T05:19:22.682Z  INFO 1 --- [applcation] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-02T05:19:22.957Z  INFO 1 --- [applcation] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02T05:19:22.961Z  INFO 1 --- [applcation] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T05:19:23.049Z  WARN 1 --- [applcation] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02T05:19:23.512Z  INFO 1 --- [applcation] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-02T05:19:23.528Z  INFO 1 --- [applcation] [           main] lgcns.lg06.ApplicationApplication         : Started ApplcationApplication in 3.293 seconds (process running for 3.577)
+2025-10-02T05:19:38.628Z  INFO 1 --- [applcation] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-02T05:19:38.628Z  INFO 1 --- [applcation] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-02T05:19:38.631Z  INFO 1 --- [applcation] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+docker: Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint loving_black (f6900c24cca888447e523b37b13328ce2e0575498909381a74469ac8ba9d8921): Bind for 0.0.0.0:8080 failed: port is already allocated
+
+Run 'docker run --help' for more information
+2025-10-02T05:25:35.924Z  INFO 1 --- [applcation] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-02T05:25:35.936Z  INFO 1 --- [applcation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-02T05:25:35.941Z  INFO 1 --- [applcation] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02T05:25:35.945Z  INFO 1 --- [applcation] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-02T05:25:35.950Z  INFO 1 --- [applcation] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+Native Memory Tracking:
+
+Total: reserved=15772896404, committed=390634644
+       malloc: 64908436 #369957
+       mmap:   reserved=15707987968, committed=325726208
+
+-                 Java Heap (reserved=14663286784, committed=201326592)
+                            (mmap: reserved=14663286784, committed=201326592) 
+ 
+-                     Class (reserved=101676012, committed=8745964)
+                            (classes #12157)
+                            (  instance classes #11225, array classes #932)
+                            (malloc=1012716 #23087) (peak=1014700 #23018) 
+                            (mmap: reserved=100663296, committed=7733248) 
+                            (  Metadata:   )
+                            (    reserved=67108864, committed=47972352)
+                            (    used=47721120)
+                            (    waste=251232 =0.52%)
+                            (  Class space:)
+                            (    reserved=100663296, committed=7733248)
+                            (    used=7457008)
+                            (    waste=276240 =3.57%)
+ 
+-                    Thread (reserved=28390808, committed=1295768)
+                            (thread #28)
+                            (stack: reserved=28311552, committed=1216512)
+                            (malloc=45008 #190) (peak=84336 #296) 
+                            (arena=34248 #59) (peak=1152016 #68)
+ 
+-                      Code (reserved=254517496, committed=15950072)
+                            (malloc=884984 #4846) (peak=1020976 #5117) 
+                            (mmap: reserved=253632512, committed=15065088) 
+ 
+-                        GC (reserved=600745743, committed=64071439)
+                            (malloc=22583055 #3199) (at peak) 
+                            (mmap: reserved=578162688, committed=41488384) 
+ 
+-                  Compiler (reserved=19791460, committed=19791460)
+                            (malloc=17364 #397) (peak=92248 #418) 
+                            (arena=19774096 #16) (peak=103676176 #32)
+ 
+-                  Internal (reserved=348707, committed=348707)
+                            (malloc=311843 #6047) (peak=316189 #6080) 
+                            (mmap: reserved=36864, committed=36864) 
+ 
+-                    Symbol (reserved=13810272, committed=13810272)
+                            (malloc=13212536 #328410) (at peak) 
+                            (arena=597736 #1) (at peak)
+ 
+-    Native Memory Tracking (reserved=5977256, committed=5977256)
+                            (malloc=57944 #1009) (peak=60632 #1045) 
+                            (tracking overhead=5919312)
+ 
+-        Shared class space (reserved=16777216, committed=10878976)
+                            (mmap: reserved=16777216, committed=10878976) 
+ 
+-               Arena Chunk (reserved=57480, committed=57480)
+                            (malloc=57480 #650) (peak=104411752 #2458) 
+ 
+-                   Tracing (reserved=345, committed=345)
+                            (malloc=345 #9) (at peak) 
+ 
+-                 Arguments (reserved=169, committed=169)
+                            (malloc=169 #5) (at peak) 
+ 
+-                    Module (reserved=107008, committed=107008)
+                            (malloc=107008 #1175) (at peak) 
+ 
+-                 Safepoint (reserved=8192, committed=8192)
+                            (mmap: reserved=8192, committed=8192) 
+ 
+-           Synchronization (reserved=70528, committed=70528)
+                            (malloc=70528 #806) (peak=72192 #822) 
+ 
+-            Serviceability (reserved=672, committed=672)
+                            (malloc=672 #6) (at peak) 
+ 
+-                 Metaspace (reserved=67328512, committed=48192000)
+                            (malloc=219648 #108) (at peak) 
+                            (mmap: reserved=67108864, committed=47972352) 
+ 
+-      String Deduplication (reserved=704, committed=704)
+                            (malloc=704 #8) (at peak) 
+ 
+-           Object Monitors (reserved=1040, committed=1040)
+                            (malloc=1040 #5) (peak=9360 #45) 
+ 
