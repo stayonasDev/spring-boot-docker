@@ -29,4 +29,10 @@ scp -i <KEY.pem> ubuntu@<SERVER_IP> "cd /home/ubuntu/app/spring-rest-api;pwd;./s
 
 ## Dockerizing
 - https://spring.io/guides/gs/spring-boot-docker
+<<<<<<< HEAD
 - openJDK 17
+=======
+--openJDK 17
+
+
+>>>>>>> @{-1}
